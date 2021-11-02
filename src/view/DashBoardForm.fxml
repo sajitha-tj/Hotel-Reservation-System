@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="647.0" prefWidth="964.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashBoardController">
+    <children>
+        <AnchorPane prefHeight="707.0" prefWidth="310.0" style="-fx-background-color: #182C61;">
+            <children>
+            <JFXButton buttonType="RAISED" layoutX="20.0" layoutY="84.0" onAction="#openGuestRegistration" prefHeight="31.0" prefWidth="271.0" style="-fx-background-color: #2980b9;" text="Guest Registration" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+                <JFXButton buttonType="RAISED" layoutX="20.0" layoutY="131.0" onAction="#openCheckIn" prefHeight="31.0" prefWidth="271.0" style="-fx-background-color: #2980b9;" text="Check-In" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </JFXButton>
+                <JFXButton buttonType="RAISED" layoutX="20.0" layoutY="179.0" onAction="#openCheckOut" prefHeight="31.0" prefWidth="271.0" style="-fx-background-color: #2980b9;" text="Check-Out" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </JFXButton>
+                <JFXButton buttonType="RAISED" layoutX="20.0" layoutY="225.0" onAction="#openGuestHistory" prefHeight="31.0" prefWidth="271.0" style="-fx-background-color: #2980b9;" text="Guest History" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </JFXButton>
+                <JFXButton buttonType="RAISED" layoutX="20.0" layoutY="271.0" onAction="#openRooms" prefHeight="31.0" prefWidth="271.0" style="-fx-background-color: #2980b9;" text="Manage Rooms" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="20.0" layoutY="317.0" onAction="#logOut" prefHeight="31.0" prefWidth="271.0" style="-fx-background-color: #2980b9;" text="Log Out" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="310.0" prefHeight="50.0" prefWidth="1008.0" style="-fx-background-color: #182C61#182C61;">
+         <children>
+            <Label fx:id="lblTopic" alignment="CENTER_RIGHT" layoutX="606.0" layoutY="12.0" prefHeight="21.0" prefWidth="388.0" text="Guest Registration" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+        <AnchorPane fx:id="dashBoardContext" layoutX="310.0" layoutY="50.0" prefHeight="657.0" prefWidth="1008.0" style="-fx-background-color: #dff9fb;" />
+    </children>
+</AnchorPane>

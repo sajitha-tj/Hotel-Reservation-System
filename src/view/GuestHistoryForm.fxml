@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="675.0" prefWidth="1432.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.GuestHistoryFormController">
+   <children>
+      <TextField fx:id="txtSearch" layoutX="80.0" layoutY="53.0" prefHeight="31.0" prefWidth="1273.0" promptText="Search" />
+      <TableView fx:id="tblInfo" layoutX="5.0" layoutY="104.0" prefHeight="558.0" prefWidth="1422.0">
+         <columns>
+            <TableColumn fx:id="colBillId" prefWidth="50.0" text="B-id" />
+            <TableColumn fx:id="colRoomNo" prefWidth="70.00003051757812" text="RoomNo" />
+            <TableColumn fx:id="colRoomType" prefWidth="85.0" text="RoomType" />
+            <TableColumn fx:id="colGuestId" prefWidth="72.0" text="G_id" />
+            <TableColumn fx:id="colName" prefWidth="148.0" text="Name" />
+            <TableColumn fx:id="colNicNo" prefWidth="102.0" text="NIC" />
+            <TableColumn fx:id="colTelNo" prefWidth="109.0" text="Tel No" />
+            <TableColumn fx:id="colNoOfPersons" prefWidth="91.0" text="Persons" />
+            <TableColumn fx:id="colInDate" prefWidth="110.0" text="In Date" />
+            <TableColumn fx:id="colOutDate" prefWidth="110.0" text="Out Date" />
+            <TableColumn fx:id="colNoOfDays" prefWidth="90.0" text="No Of Days" />
+            <TableColumn fx:id="colTotal" prefWidth="90.0" text="Total" />
+            <TableColumn fx:id="colPaid" prefWidth="100.0" text="Paid" />
+            <TableColumn fx:id="colBalance" minWidth="2.0" prefWidth="95.0" text="balance" />
+            <TableColumn fx:id="colStatus" prefWidth="98.0" text="Status" />
+         </columns>
+      </TableView>
+      <Label layoutX="685.0" layoutY="14.0" text="History">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

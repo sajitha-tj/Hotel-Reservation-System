@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="657.0" prefWidth="1008.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CheckOutFormController">
+   <children>
+      <JFXTextField fx:id="txtNoOfAdults" editable="false" labelFloat="true" layoutX="385.0" layoutY="323.0" prefHeight="31.0" prefWidth="182.0" promptText="No of Adults" />
+      <JFXTextField fx:id="txtNoOfChildren" editable="false" labelFloat="true" layoutX="578.0" layoutY="323.0" prefHeight="31.0" prefWidth="182.0" promptText="No of Children" />
+      <JFXDatePicker fx:id="dtpInDate" editable="false" layoutX="774.0" layoutY="323.0" prefHeight="31.0" prefWidth="221.0" promptText="In Date" />
+      <JFXDatePicker fx:id="dtpOutDate" layoutX="13.0" layoutY="400.0" prefHeight="31.0" prefWidth="221.0" promptText="Out Date" />
+      <JFXTextField fx:id="txtNoOfDays" labelFloat="true" layoutX="260.0" layoutY="400.0" prefHeight="31.0" prefWidth="205.0" promptText="No of Days" />
+      <JFXTextField fx:id="txtId" editable="false" focusColor="#8a8a8a" labelFloat="true" layoutX="14.0" layoutY="201.0" prefHeight="31.0" prefWidth="135.0" promptText="Guset Id" unFocusColor="#8a8a8a" />
+      <JFXTextField fx:id="txtNic" editable="false" focusColor="#8a8a8a" labelFloat="true" layoutX="162.0" layoutY="201.0" prefHeight="31.0" prefWidth="199.0" promptText="NIC/Driving Licence No." unFocusColor="#8a8a8a" />
+      <JFXTextField fx:id="txtName" editable="false" focusColor="#8a8a8a" labelFloat="true" layoutX="376.0" layoutY="201.0" prefHeight="31.0" prefWidth="381.0" promptText="Full Name" unFocusColor="#8a8a8a" />
+      <JFXTextField fx:id="txtEmail" editable="false" focusColor="#8a8a8a" labelFloat="true" layoutX="774.0" layoutY="252.0" prefHeight="31.0" prefWidth="221.0" promptText="email" unFocusColor="#8a8a8a" />
+      <JFXTextField fx:id="txtTelNo" editable="false" focusColor="#8a8a8a" labelFloat="true" layoutX="770.0" layoutY="201.0" prefHeight="31.0" prefWidth="221.0" promptText="Telephone No." unFocusColor="#8a8a8a" />
+      <JFXTextField fx:id="txtAddress" editable="false" focusColor="#8a8a8a" labelFloat="true" layoutX="16.0" layoutY="252.0" prefHeight="31.0" prefWidth="462.0" promptText="Address" unFocusColor="#8a8a8a" />
+      <JFXTextField fx:id="txtState" editable="false" focusColor="#8a8a8a" labelFloat="true" layoutX="491.0" layoutY="252.0" prefHeight="31.0" prefWidth="265.0" promptText="State/ Country" unFocusColor="#8a8a8a" />
+      <Label alignment="CENTER" layoutX="14.0" layoutY="169.0" text="Guset Details">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="13.0" layoutY="293.0" text="Room Details">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSearch" layoutX="15.0" layoutY="4.0" prefHeight="31.0" prefWidth="981.0" promptText="Search Room No/Name" />
+      <TableView fx:id="tblInfo" layoutX="14.0" layoutY="37.0" prefHeight="130.0" prefWidth="981.0">
+        <columns>
+            <TableColumn fx:id="colBillId" prefWidth="50.0" text="B-id" />
+          <TableColumn fx:id="colRoomNo" prefWidth="77.0" text="RoomNo" />
+          <TableColumn fx:id="colRoomType" prefWidth="91.0" text="RoomType" />
+            <TableColumn fx:id="colGuestId" prefWidth="68.0" text="G_id" />
+            <TableColumn fx:id="colName" prefWidth="146.0" text="Name" />
+            <TableColumn fx:id="colNicNo" prefWidth="109.0" text="NIC" />
+            <TableColumn fx:id="colTelNo" prefWidth="112.0" text="Tel No" />
+            <TableColumn fx:id="colInDate" prefWidth="110.0" text="In Date" />
+            <TableColumn fx:id="colNoOfAdults" prefWidth="81.0" text="Adults" />
+            <TableColumn fx:id="colNoOfKids" prefWidth="67.0" text="Kids" />
+            <TableColumn fx:id="colNoOfDays" prefWidth="69.0" text="Days" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutX="13.0" layoutY="364.0" text="Bill Details">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtPrice" labelFloat="true" layoutX="491.0" layoutY="400.0" prefHeight="31.0" prefWidth="205.0" promptText="Price per day" />
+      <JFXTextField fx:id="txtOtherCharges" labelFloat="true" layoutX="454.0" layoutY="451.0" prefHeight="31.0" prefWidth="248.0" promptText="Other charges" />
+      <JFXTextField fx:id="txtDiscount" labelFloat="true" layoutX="454.0" layoutY="502.0" prefHeight="31.0" prefWidth="248.0" promptText="Discount (%)" />
+      <JFXTextField fx:id="txtAmountPaid" labelFloat="true" layoutX="454.0" layoutY="557.0" prefHeight="31.0" prefWidth="248.0" promptText="Amount Paid" />
+      <JFXTextField fx:id="txtTotalCharge" alignment="CENTER_RIGHT" editable="false" labelFloat="true" layoutX="743.0" layoutY="400.0" prefHeight="31.0" prefWidth="248.0" promptText="Total Charge">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtSubTotal" alignment="CENTER_RIGHT" editable="false" labelFloat="true" layoutX="748.0" layoutY="451.0" prefHeight="31.0" prefWidth="248.0" promptText="Sub Total">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtTotal" alignment="CENTER_RIGHT" editable="false" labelFloat="true" layoutX="748.0" layoutY="502.0" prefHeight="31.0" prefWidth="248.0" promptText="Total">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtBalance" alignment="CENTER_RIGHT" editable="false" labelFloat="true" layoutX="748.0" layoutY="557.0" prefHeight="31.0" prefWidth="248.0" promptText="Balance">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></JFXTextField>
+      <JFXButton buttonType="RAISED" layoutX="743.0" layoutY="612.0" onAction="#onSubmit" prefHeight="31.0" prefWidth="256.0" style="-fx-background-color: #27ae60;" text="Submit" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtRoomNo" editable="false" labelFloat="true" layoutX="13.0" layoutY="323.0" prefHeight="31.0" prefWidth="173.0" promptText="Room No." />
+      <JFXTextField fx:id="txtRoomType" editable="false" labelFloat="true" layoutX="198.0" layoutY="323.0" prefHeight="31.0" prefWidth="173.0" promptText="Room Type" />
+      <JFXTextField fx:id="txtBillId" editable="false" labelFloat="true" layoutX="16.0" layoutY="451.0" prefHeight="31.0" prefWidth="182.0" promptText="Bill Id" />
+      <Label layoutX="774.0" layoutY="307.0" text="Check-In Date">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="13.0" layoutY="386.0" text="Check-Out Date">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
