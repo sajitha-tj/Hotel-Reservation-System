@@ -38,13 +38,13 @@
          </font>
       </JFXButton>
       <TextField fx:id="txtSearch" layoutX="33.0" layoutY="20.0" prefHeight="31.0" prefWidth="703.0" promptText="Search Guest (Id/Name)" />
-      <JFXTextField fx:id="txtId" editable="false" focusColor="#8a8a8a" labelFloat="true" layoutX="14.0" layoutY="313.0" prefHeight="31.0" prefWidth="199.0" promptText="Guset Id" unFocusColor="#8a8a8a" />
-      <JFXTextField fx:id="txtNic" editable="false" focusColor="#8a8a8a" labelFloat="true" layoutX="228.0" layoutY="313.0" prefHeight="31.0" prefWidth="199.0" promptText="NIC/Driving Licence No." unFocusColor="#8a8a8a" />
-      <JFXTextField fx:id="txtName" editable="false" focusColor="#8a8a8a" labelFloat="true" layoutX="14.0" layoutY="379.0" prefHeight="31.0" prefWidth="415.0" promptText="Full Name" unFocusColor="#8a8a8a" />
-      <JFXTextField fx:id="txtEmail" editable="false" focusColor="#8a8a8a" labelFloat="true" layoutX="15.0" layoutY="454.0" prefHeight="31.0" prefWidth="199.0" promptText="email" unFocusColor="#8a8a8a" />
-      <JFXTextField fx:id="txtTelNo" editable="false" focusColor="#8a8a8a" labelFloat="true" layoutX="224.0" layoutY="454.0" prefHeight="31.0" prefWidth="199.0" promptText="Telephone No." unFocusColor="#8a8a8a" />
-      <JFXTextField fx:id="txtAddress" editable="false" focusColor="#8a8a8a" labelFloat="true" layoutX="14.0" layoutY="508.0" prefHeight="31.0" prefWidth="415.0" promptText="Address" unFocusColor="#8a8a8a" />
-      <JFXTextField fx:id="txtState" editable="false" focusColor="#8a8a8a" labelFloat="true" layoutX="14.0" layoutY="578.0" prefHeight="31.0" prefWidth="199.0" promptText="State/ Country" unFocusColor="#8a8a8a" />
+      <JFXTextField fx:id="txtId" disable="true" editable="false" focusColor="#8a8a8a" labelFloat="true" layoutX="14.0" layoutY="313.0" prefHeight="31.0" prefWidth="199.0" promptText="Guset Id" unFocusColor="#8a8a8a" />
+      <JFXTextField fx:id="txtNic" disable="true" editable="false" focusColor="#8a8a8a" labelFloat="true" layoutX="228.0" layoutY="313.0" prefHeight="31.0" prefWidth="199.0" promptText="NIC/Driving Licence No." unFocusColor="#8a8a8a" />
+      <JFXTextField fx:id="txtName" disable="true" editable="false" focusColor="#8a8a8a" labelFloat="true" layoutX="14.0" layoutY="379.0" prefHeight="31.0" prefWidth="415.0" promptText="Full Name" unFocusColor="#8a8a8a" />
+      <JFXTextField fx:id="txtEmail" disable="true" editable="false" focusColor="#8a8a8a" labelFloat="true" layoutX="15.0" layoutY="454.0" prefHeight="31.0" prefWidth="199.0" promptText="email" unFocusColor="#8a8a8a" />
+      <JFXTextField fx:id="txtTelNo" disable="true" editable="false" focusColor="#8a8a8a" labelFloat="true" layoutX="224.0" layoutY="454.0" prefHeight="31.0" prefWidth="199.0" promptText="Telephone No." unFocusColor="#8a8a8a" />
+      <JFXTextField fx:id="txtAddress" disable="true" editable="false" focusColor="#8a8a8a" labelFloat="true" layoutX="14.0" layoutY="508.0" prefHeight="31.0" prefWidth="415.0" promptText="Address" unFocusColor="#8a8a8a" />
+      <JFXTextField fx:id="txtState" disable="true" editable="false" focusColor="#8a8a8a" labelFloat="true" layoutX="14.0" layoutY="578.0" prefHeight="31.0" prefWidth="199.0" promptText="State/ Country" unFocusColor="#8a8a8a" />
       <Separator layoutX="461.0" layoutY="239.0" orientation="VERTICAL" prefHeight="407.0" prefWidth="4.0" />
       <JFXButton buttonType="RAISED" layoutX="760.0" layoutY="20.0" onAction="#addNewGuest" prefHeight="31.0" prefWidth="221.0" style="-fx-background-color: #3498db;" text="+Add New" textFill="WHITE" />
       <Label alignment="CENTER" layoutX="172.0" layoutY="257.0" text="Guset Details">

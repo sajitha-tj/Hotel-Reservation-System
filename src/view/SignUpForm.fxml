@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="signInFormContext" prefHeight="502.0" prefWidth="747.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SignUpFormController">
+   <children>
+      <JFXTextField fx:id="txtName" labelFloat="true" layoutX="414.0" layoutY="68.0" prefHeight="31.0" prefWidth="290.0" promptText="Name" />
+      <JFXTextField fx:id="txtTelNo" labelFloat="true" layoutX="414.0" layoutY="118.0" prefHeight="31.0" prefWidth="290.0" promptText="Tel No" />
+      <JFXTextField fx:id="txtAddress" labelFloat="true" layoutX="414.0" layoutY="167.0" prefHeight="31.0" prefWidth="290.0" promptText="Address" />
+      <JFXTextField fx:id="txtEmail" labelFloat="true" layoutX="414.0" layoutY="216.0" prefHeight="31.0" prefWidth="290.0" promptText="Email" />
+      <JFXPasswordField fx:id="txtPassword" labelFloat="true" layoutX="414.0" layoutY="270.0" prefHeight="31.0" prefWidth="290.0" promptText="Password" />
+      <JFXPasswordField fx:id="txtConfirmPassword" labelFloat="true" layoutX="414.0" layoutY="322.0" prefHeight="31.0" prefWidth="290.0" promptText="Confirm Password" />
+      <JFXButton fx:id="btnSignUp" buttonType="RAISED" disable="true" layoutX="414.0" layoutY="379.0" onAction="#signUp" prefHeight="31.0" prefWidth="290.0" style="-fx-background-color: #3498db;" text="Sign Up" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane prefHeight="502.0" prefWidth="373.5" style="-fx-background-color: #3498db;">
+         <children>
+            <Label layoutX="134.0" layoutY="100.0" text="Welcome!">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Separator layoutX="398.0" layoutY="442.0" prefHeight="2.0" prefWidth="341.0" />
+      <JFXButton buttonType="RAISED" layoutX="586.0" layoutY="457.0" onAction="#backToLogIn" prefHeight="31.0" prefWidth="147.0" style="-fx-background-color: #7f8c8d;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

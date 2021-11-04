@@ -8,6 +8,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
@@ -25,9 +27,12 @@ public class LoginFormController {
         //email: admin@mail.com
         //password: admin1234
         try {
-            if (bo.getLogIn(txtEmail.getText(), txtPassword.getText().hashCode())){
-                goToDashBoard();
-            }else {
+            if (bo.getLogIn(txtEmail.getText(), txtPassword.getText().hashCode()) == 2){
+                openUI("DashBoardForm");
+            }else if(bo.getLogIn(txtEmail.getText(), txtPassword.getText().hashCode()) == 1){
+                new Alert(Alert.AlertType.INFORMATION, "Please wait until an admin approve your request").show();
+            }
+            else{
                 new Alert(Alert.AlertType.WARNING,"Incorrect email or password").show();
             }
 
@@ -38,13 +43,24 @@ public class LoginFormController {
         }
     }
 
-    private void goToDashBoard(){
+    private void openUI(String link){
         try {
             Stage window = (Stage) logInFormContext.getScene().getWindow();
-            window.setScene(new Scene(FXMLLoader.load(getClass().getResource("../view/DashBoardForm.fxml"))));
+            window.setScene(new Scene(FXMLLoader.load(getClass().getResource("../view/"+link+".fxml"))));
             window.centerOnScreen();
         }catch (IOException ioException){
             new Alert(Alert.AlertType.ERROR,"Something went wrong. Try Again\n"+"Error:"+ioException.getMessage()).show();
+        }
+    }
+
+    public void signUp(ActionEvent actionEvent) {
+        openUI("SignUpForm");
+    }
+
+    public void onEnterKey(KeyEvent keyEvent) throws IOException {
+        if(keyEvent.getCode().equals(KeyCode.ENTER)){
+            ActionEvent a = new ActionEvent();
+            login(a);
         }
     }
 }
